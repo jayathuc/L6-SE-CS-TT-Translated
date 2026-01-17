@@ -19,14 +19,20 @@
     }
   </style>
   <script>
-    // JavaScript fallback for highlighting modules
+    // JavaScript for highlighting modules
     document.addEventListener('DOMContentLoaded', function () {
       const cells = document.querySelectorAll('td');
       cells.forEach(function (cell) {
-        if (cell.textContent.includes('Computer Science and Software Engineering Project')) {
+        // Normalize whitespace in text content for reliable matching
+        const text = cell.textContent.replace(/\s+/g, ' ');
+
+        // Check for FYP module
+        if (text.includes('Computer Science and Software Engineering Project') ||
+          text.includes('Aloka Fernando') && text.includes('LEC')) {
           cell.style.backgroundColor = '#b3e5fc';
         }
-        if (cell.textContent.includes('Cyber Security')) {
+        // Check for Cyber Security module
+        if (text.includes('Cyber Security')) {
           cell.style.backgroundColor = '#c8e6c9';
         }
       });
