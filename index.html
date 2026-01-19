@@ -8,12 +8,12 @@
   <link rel="stylesheet" media="all" href="L6 SE CS_stylesheet.css" type="text/css" />
   <style>
     /* Highlighting for priority modules */
-    td:has(:scope:contains("Computer Science and Software Engineering Project")) {
+    .fyp-highlight {
       background-color: #b3e5fc !important;
       /* Light Blue */
     }
 
-    td:has(:scope:contains("Cyber Security")) {
+    .cyber-highlight {
       background-color: #c8e6c9 !important;
       /* Light Green */
     }
@@ -23,12 +23,10 @@
     document.addEventListener('DOMContentLoaded', function () {
       const cells = document.querySelectorAll('td');
       cells.forEach(function (cell) {
-        // Normalize whitespace in text content for reliable matching
         const text = cell.textContent.replace(/\s+/g, ' ');
 
         // Check for FYP module
-        if (text.includes('Computer Science and Software Engineering Project') ||
-          text.includes('Aloka Fernando') && text.includes('LEC')) {
+        if (text.includes('Computer Science and Software Engineering Project')) {
           cell.style.backgroundColor = '#b3e5fc';
         }
         // Check for Cyber Security module
@@ -154,9 +152,8 @@
         <th class="yAxis">08:30</th>
         <td>---</td>
         <td>---</td>
-        <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G4, L6 CS / G5, L6 SE / G7, L6 SE / G8<br />Computer
-          Science and Software Engineering Project (Aloka Fernando) LEC, [8.30am - 10.30am]<br />Aloka
-          Fernando<br />Auditorium<br /></td>
+        <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G4, L6 CS / G5, L6 SE / G7, L6 SE /
+          G8<br />Computer Science and Software Engineering Project LEC, [8.30am - 10.30am]<br />Aloka Fernando<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -189,7 +186,7 @@
         <td>---</td>
         <td>---</td>
         <td rowspan="2">L6 CS / G1, L6 CS / G7, L6 CS / G8, L6 CS / G9, L6 CS / G10, L6 SE / G9, L6 SE /
-          G10<br />Internet of Things (Sahan Priyanayana) LEC, [11.30am - 1.30pm]<br />Sahan Priyanayana<br /></td>
+          G10<br />Internet of Things LEC, [11.30am - 1.30pm]<br />Sahan Priyanayana<br /></td>
         <td>---</td>
         <td>---</td>
       </tr>
@@ -206,13 +203,13 @@
       <tr>
         <th class="yAxis">13:30</th>
         <td>---</td>
-        <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G10<br />Cyber Security
-          LEC, [1.30pm - 3.30pm]<br />Chamupathi Gigara Hettige<br />[5LA] -GP<br /></td>
+        <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G10<br />Cyber Security LEC, [1.30pm -
+          3.30pm]<br />Chamupathi Gigara Hettige<br />[5LA] -GP<br /></td>
         <td>---</td>
         <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G4, L6 CS / G5, L6 CS / G6, L6 CS /
-          G10<br />Operational Research and Optimization (Sahdiya Hussain) LEC, [1.30pm - 3.30pm]<br />Sahdiya
-          Hussain<br />Auditorium<br /></td>
-        <td>---</td>
+          G10<br />Operational Research and Optimization LEC, [1.30pm - 3.30pm]<br />Sahdiya Hussain<br />Auditorium<br /></td>
+        <td rowspan="2">L6 CS / G1, L6 CS / G7, L6 CS / G8, L6 CS / G9, L6 CS / G10<br />Internet of Things TUT, [1.30pm
+          -3.30pm]<br />Sahan Priyanayana<br />[5LB] -GP<br /></td>
         <td>---</td>
         <td>---</td>
       </tr>
@@ -222,7 +219,7 @@
         <!-- span -->
         <td>---</td>
         <!-- span -->
-        <td>---</td>
+        <!-- span -->
         <td>---</td>
         <td>---</td>
       </tr>
@@ -298,7 +295,7 @@
       </tr>
       <tr class="foot">
         <td></td>
-        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 11:27 AM</td>
+        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 8:56 AM</td>
       </tr>
     </tbody>
   </table>
@@ -328,16 +325,12 @@
         <th class="yAxis">08:30</th>
         <td>---</td>
         <td>---</td>
-        <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G4, L6 CS / G5, L6 SE / G7, L6 SE / G8<br />Computer
-          Science and Software Engineering Project (Aloka Fernando) LEC, [8.30am - 10.30am]<br />Aloka
-          Fernando<br />Auditorium<br /></td>
-        <td rowspan="2">L6 CS / G2, L6 CS / G10<br />Information Driven Entrepreneurship and Enterprise (Shonali Aponso)
-          LEC, [8.30am -
-          10.30am]<br />Shonali Aponso<br />DB - 3LA<br /></td>
-        <td rowspan="2">L6 CS / G2, L6 CS / G10<br />Information Driven Entrepreneurship and Enterprise (Shonali Aponso)
-          TUT, [8.30am
-          -
-          10.30am]<br />Shonali Aponso<br />DB - 3LA<br /></td>
+        <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G4, L6 CS / G5, L6 SE / G7, L6 SE /
+          G8<br />Computer Science and Software Engineering Project LEC, [8.30am - 10.30am]<br />Aloka Fernando<br />Auditorium<br /></td>
+        <td rowspan="2">L6 CS / G2, L6 CS / G10<br />Information Driven Entrepreneurship and Enterprise LEC, [8.30am - 10.30am]<br />Shonali Aponso<br />DB - 3LA<br />
+        </td>
+        <td rowspan="2">L6 CS / G2, L6 CS / G10<br />Information Driven Entrepreneurship and Enterprise TUT, [8.30am - 10.30am]<br />Shonali Aponso<br />DB -
+          3LA<br /></td>
         <td>---</td>
         <td>---</td>
       </tr>
@@ -384,12 +377,11 @@
       <tr>
         <th class="yAxis">13:30</th>
         <td>---</td>
-        <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G10<br />Cyber Security
-          LEC, [1.30pm - 3.30pm]<br />Chamupathi Gigara Hettige<br />[5LA] -GP<br /></td>
+        <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G10<br />Cyber Security LEC, [1.30pm -
+          3.30pm]<br />Chamupathi Gigara Hettige<br />[5LA] -GP<br /></td>
         <td>---</td>
         <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G4, L6 CS / G5, L6 CS / G6, L6 CS /
-          G10<br />Operational Research and Optimization (Sahdiya Hussain) LEC, [1.30pm - 3.30pm]<br />Sahdiya
-          Hussain<br />Auditorium<br /></td>
+          G10<br />Operational Research and Optimization LEC, [1.30pm - 3.30pm]<br />Sahdiya Hussain<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -476,7 +468,7 @@
       </tr>
       <tr class="foot">
         <td></td>
-        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 11:27 AM</td>
+        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 8:56 AM</td>
       </tr>
     </tbody>
   </table>
@@ -506,9 +498,8 @@
         <th class="yAxis">08:30</th>
         <td>---</td>
         <td>---</td>
-        <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G4, L6 CS / G5, L6 SE / G7, L6 SE / G8<br />Computer
-          Science and Software Engineering Project (Aloka Fernando) LEC, [8.30am - 10.30am]<br />Aloka
-          Fernando<br />Auditorium<br /></td>
+        <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G4, L6 CS / G5, L6 SE / G7, L6 SE /
+          G8<br />Computer Science and Software Engineering Project LEC, [8.30am - 10.30am]<br />Aloka Fernando<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -557,12 +548,11 @@
       <tr>
         <th class="yAxis">13:30</th>
         <td>---</td>
-        <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G10<br />Cyber Security
-          LEC, [1.30pm - 3.30pm]<br />Chamupathi Gigara Hettige<br />[5LA] -GP<br /></td>
+        <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G10<br />Cyber Security LEC, [1.30pm -
+          3.30pm]<br />Chamupathi Gigara Hettige<br />[5LA] -GP<br /></td>
         <td>---</td>
         <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G4, L6 CS / G5, L6 CS / G6, L6 CS /
-          G10<br />Operational Research and Optimization (Sahdiya Hussain) LEC, [1.30pm - 3.30pm]<br />Sahdiya
-          Hussain<br />Auditorium<br /></td>
+          G10<br />Operational Research and Optimization LEC, [1.30pm - 3.30pm]<br />Sahdiya Hussain<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -649,7 +639,7 @@
       </tr>
       <tr class="foot">
         <td></td>
-        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 11:27 AM</td>
+        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 8:56 AM</td>
       </tr>
     </tbody>
   </table>
@@ -679,9 +669,8 @@
         <th class="yAxis">08:30</th>
         <td>---</td>
         <td>---</td>
-        <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G4, L6 CS / G5, L6 SE / G7, L6 SE / G8<br />Computer
-          Science and Software Engineering Project (Aloka Fernando) LEC, [8.30am - 10.30am]<br />Aloka
-          Fernando<br />Auditorium<br /></td>
+        <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G4, L6 CS / G5, L6 SE / G7, L6 SE /
+          G8<br />Computer Science and Software Engineering Project LEC, [8.30am - 10.30am]<br />Aloka Fernando<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -730,12 +719,11 @@
       <tr>
         <th class="yAxis">13:30</th>
         <td>---</td>
-        <td rowspan="2">L6 CS / G4, L6 CS / G5, L6 CS / G6<br />Cyber Security LEC,
-          [1.30pm - 3.30pm]<br />Dhanushka Rathnayake<br />[4LA] -GP<br /></td>
+        <td rowspan="2">L6 CS / G4, L6 CS / G5, L6 CS / G6<br />Cyber Security LEC, [1.30pm - 3.30pm]<br />Dhanushka Rathnayake<br />[4LA]
+          -GP<br /></td>
         <td>---</td>
         <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G4, L6 CS / G5, L6 CS / G6, L6 CS /
-          G10<br />Operational Research and Optimization (Sahdiya Hussain) LEC, [1.30pm - 3.30pm]<br />Sahdiya
-          Hussain<br />Auditorium<br /></td>
+          G10<br />Operational Research and Optimization LEC, [1.30pm - 3.30pm]<br />Sahdiya Hussain<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -822,7 +810,7 @@
       </tr>
       <tr class="foot">
         <td></td>
-        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 11:27 AM</td>
+        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 8:56 AM</td>
       </tr>
     </tbody>
   </table>
@@ -851,12 +839,10 @@
       <tr>
         <th class="yAxis">08:30</th>
         <td>---</td>
-        <td rowspan="4">L6 CS / G5, L6 CS / G6, L6 CS / G7, L6 CS / G8, L6 CS / G10<br />Digital Marketing (Prof Prasad
-          Wimalaratne) LEC, [8.30am
-          -12.30pm]<br />Prof Prasad Wimalaratne<br />[3LA] -GP<br /></td>
-        <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G4, L6 CS / G5, L6 SE / G7, L6 SE / G8<br />Computer
-          Science and Software Engineering Project (Aloka Fernando) LEC, [8.30am - 10.30am]<br />Aloka
-          Fernando<br />Auditorium<br /></td>
+        <td rowspan="2">L6 CS / G5, L6 CS / G6, L6 CS / G7, L6 CS / G8, L6 CS / G10<br />Digital Marketing, Social Media and Web Analytics LEC, [8.30am -
+          10.30am]<br />Prof Prasad Wimalaratne<br />[3LA] -GP<br /></td>
+        <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G4, L6 CS / G5, L6 SE / G7, L6 SE /
+          G8<br />Computer Science and Software Engineering Project LEC, [8.30am - 10.30am]<br />Aloka Fernando<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -875,7 +861,7 @@
       <tr>
         <th class="yAxis">10:30</th>
         <td>---</td>
-        <!-- span -->
+        <td>---</td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -885,7 +871,7 @@
       <tr>
         <th class="yAxis">11:30</th>
         <td>---</td>
-        <!-- span -->
+        <td>---</td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -905,12 +891,11 @@
       <tr>
         <th class="yAxis">13:30</th>
         <td>---</td>
-        <td rowspan="2">L6 CS / G4, L6 CS / G5, L6 CS / G6<br />Cyber Security LEC,
-          [1.30pm - 3.30pm]<br />Dhanushka Rathnayake<br />[4LA] -GP<br /></td>
+        <td rowspan="2">L6 CS / G4, L6 CS / G5, L6 CS / G6<br />Cyber Security LEC, [1.30pm - 3.30pm]<br />Dhanushka Rathnayake<br />[4LA]
+          -GP<br /></td>
         <td>---</td>
         <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G4, L6 CS / G5, L6 CS / G6, L6 CS /
-          G10<br />Operational Research and Optimization (Sahdiya Hussain) LEC, [1.30pm - 3.30pm]<br />Sahdiya
-          Hussain<br />Auditorium<br /></td>
+          G10<br />Operational Research and Optimization LEC, [1.30pm - 3.30pm]<br />Sahdiya Hussain<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -928,7 +913,8 @@
       <tr>
         <th class="yAxis">15:30</th>
         <td>---</td>
-        <td>---</td>
+        <td rowspan="2">L6 CS / G5, L6 CS / G8, L6 CS / G10<br />Digital Marketing, Social Media and Web Analytics TUT, [3.30pm - 5.30pm]<br />PRAS,
+          MJAN<br />[3LA] -GP<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -938,7 +924,7 @@
       <tr>
         <th class="yAxis">16:30</th>
         <td>---</td>
-        <td>---</td>
+        <!-- span -->
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -997,7 +983,7 @@
       </tr>
       <tr class="foot">
         <td></td>
-        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 11:27 AM</td>
+        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 8:56 AM</td>
       </tr>
     </tbody>
   </table>
@@ -1026,9 +1012,8 @@
       <tr>
         <th class="yAxis">08:30</th>
         <td>---</td>
-        <td rowspan="4">L6 CS / G5, L6 CS / G6, L6 CS / G7, L6 CS / G8, L6 CS / G10<br />Digital Marketing (Prof Prasad
-          Wimalaratne) LEC, [8.30am
-          -12.30pm]<br />Prof Prasad Wimalaratne<br />[3LA] -GP<br /></td>
+        <td rowspan="2">L6 CS / G5, L6 CS / G6, L6 CS / G7, L6 CS / G8, L6 CS / G10<br />Digital Marketing, Social Media and Web Analytics LEC, [8.30am -
+          10.30am]<br />Prof Prasad Wimalaratne<br />[3LA] -GP<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -1048,10 +1033,9 @@
       <tr>
         <th class="yAxis">10:30</th>
         <td>---</td>
-        <!-- span -->
+        <td rowspan="2">Digital Marketing, Social Media and Web Analytics TUT, [10.30am -12.30pm]<br />Prof Prasad Wimalaratne, NILAN<br />[3LA] -GP<br /></td>
         <td rowspan="2">L6 CS / G6, L6 CS / G7, L6 CS / G8, L6 CS / G9, L6 CS / G10, L6 SE / G9, L6 SE /
-          G10<br />Computer Science and Software Engineering Project (Aloka Fernando) LEC, [10.30am -12.30pm]<br />Aloka
-          Fernando<br />Auditorium<br /></td>
+          G10<br />Computer Science and Software Engineering Project LEC, [10.30am -12.30pm]<br />Aloka Fernando<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -1080,12 +1064,11 @@
       <tr>
         <th class="yAxis">13:30</th>
         <td>---</td>
-        <td rowspan="2">L6 CS / G4, L6 CS / G5, L6 CS / G6<br />Cyber Security LEC,
-          [1.30pm - 3.30pm]<br />Dhanushka Rathnayake<br />[4LA] -GP<br /></td>
+        <td rowspan="2">L6 CS / G4, L6 CS / G5, L6 CS / G6<br />Cyber Security LEC, [1.30pm - 3.30pm]<br />Dhanushka Rathnayake<br />[4LA]
+          -GP<br /></td>
         <td>---</td>
         <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G4, L6 CS / G5, L6 CS / G6, L6 CS /
-          G10<br />Operational Research and Optimization (Sahdiya Hussain) LEC, [1.30pm - 3.30pm]<br />Sahdiya
-          Hussain<br />Auditorium<br /></td>
+          G10<br />Operational Research and Optimization LEC, [1.30pm - 3.30pm]<br />Sahdiya Hussain<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -1172,7 +1155,7 @@
       </tr>
       <tr class="foot">
         <td></td>
-        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 11:27 AM</td>
+        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 8:56 AM</td>
       </tr>
     </tbody>
   </table>
@@ -1201,11 +1184,11 @@
       <tr>
         <th class="yAxis">08:30</th>
         <td>---</td>
-        <td rowspan="4">L6 CS / G5, L6 CS / G6, L6 CS / G7, L6 CS / G8, L6 CS / G10<br />Digital Marketing (Prof Prasad
-          Wimalaratne) LEC, [8.30am
-          -12.30pm]<br />Prof Prasad Wimalaratne<br />[3LA] -GP<br /></td>
+        <td rowspan="2">L6 CS / G5, L6 CS / G6, L6 CS / G7, L6 CS / G8, L6 CS / G10<br />Digital Marketing, Social Media and Web Analytics LEC, [8.30am -
+          10.30am]<br />Prof Prasad Wimalaratne<br />[3LA] -GP<br /></td>
         <td>---</td>
-        <td>---</td>
+        <td rowspan="2">L6 CS / G8, L6 CS / G9, L6 CS / G7<br />Cyber Security LEC, [8.30am -
+          10.30am]<br />Chamupathi Gigara Hettige<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -1215,7 +1198,7 @@
         <td>---</td>
         <!-- span -->
         <td>---</td>
-        <td>---</td>
+        <!-- span -->
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -1223,10 +1206,9 @@
       <tr>
         <th class="yAxis">10:30</th>
         <td>---</td>
-        <!-- span -->
+        <td>---</td>
         <td rowspan="2">L6 CS / G6, L6 CS / G7, L6 CS / G8, L6 CS / G9, L6 CS / G10, L6 SE / G9, L6 SE /
-          G10<br />Computer Science and Software Engineering Project (Aloka Fernando) LEC, [10.30am -12.30pm]<br />Aloka
-          Fernando<br />Auditorium<br /></td>
+          G10<br />Computer Science and Software Engineering Project LEC, [10.30am -12.30pm]<br />Aloka Fernando<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -1235,11 +1217,11 @@
       <tr>
         <th class="yAxis">11:30</th>
         <td>---</td>
-        <!-- span -->
+        <td>---</td>
         <!-- span -->
         <td>---</td>
         <td rowspan="2">L6 CS / G1, L6 CS / G7, L6 CS / G8, L6 CS / G9, L6 CS / G10, L6 SE / G9, L6 SE /
-          G10<br />Internet of Things (Sahan Priyanayana) LEC, [11.30am - 1.30pm]<br />Sahan Priyanayana<br /></td>
+          G10<br />Internet of Things LEC, [11.30am - 1.30pm]<br />Sahan Priyanayana<br /></td>
         <td>---</td>
         <td>---</td>
       </tr>
@@ -1256,21 +1238,21 @@
       <tr>
         <th class="yAxis">13:30</th>
         <td>---</td>
+        <td rowspan="2">Digital Marketing, Social Media and Web Analytics TUT, [1.30pm - 3.30pm]<br />Prof Prasad Wimalaratne, Mohanadas Jananie<br />[3LA] -GP<br /></td>
         <td>---</td>
         <td>---</td>
-        <td rowspan="2">L6 CS / G8, L6 CS / G9, L6 CS / G7<br />Cyber Security LEC,
-          [1.30pm - 3.30pm]<br />Chamupathi Gigara Hettige<br />[3LA] -GP<br /></td>
-        <td>---</td>
+        <td rowspan="2">L6 CS / G1, L6 CS / G7, L6 CS / G8, L6 CS / G9, L6 CS / G10<br />Internet of Things TUT, [1.30pm
+          -3.30pm]<br />Sahan Priyanayana<br />[5LB] -GP<br /></td>
         <td>---</td>
         <td>---</td>
       </tr>
       <tr>
         <th class="yAxis">14:30</th>
         <td>---</td>
+        <!-- span -->
         <td>---</td>
         <td>---</td>
         <!-- span -->
-        <td>---</td>
         <td>---</td>
         <td>---</td>
       </tr>
@@ -1346,7 +1328,7 @@
       </tr>
       <tr class="foot">
         <td></td>
-        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 11:27 AM</td>
+        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 8:56 AM</td>
       </tr>
     </tbody>
   </table>
@@ -1375,11 +1357,11 @@
       <tr>
         <th class="yAxis">08:30</th>
         <td>---</td>
-        <td rowspan="4">L6 CS / G5, L6 CS / G6, L6 CS / G7, L6 CS / G8, L6 CS / G10<br />Digital Marketing (Prof Prasad
-          Wimalaratne) LEC, [8.30am
-          -12.30pm]<br />Prof Prasad Wimalaratne<br />[3LA] -GP<br /></td>
+        <td rowspan="2">L6 CS / G5, L6 CS / G6, L6 CS / G7, L6 CS / G8, L6 CS / G10<br />Digital Marketing, Social Media and Web Analytics LEC, [8.30am -
+          10.30am]<br />Prof Prasad Wimalaratne<br />[3LA] -GP<br /></td>
         <td>---</td>
-        <td>---</td>
+        <td rowspan="2">L6 CS / G8, L6 CS / G9, L6 CS / G7<br />Cyber Security LEC, [8.30am -
+          10.30am]<br />Chamupathi Gigara Hettige<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -1389,7 +1371,7 @@
         <td>---</td>
         <!-- span -->
         <td>---</td>
-        <td>---</td>
+        <!-- span -->
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -1397,10 +1379,9 @@
       <tr>
         <th class="yAxis">10:30</th>
         <td>---</td>
-        <!-- span -->
+        <td>---</td>
         <td rowspan="2">L6 CS / G6, L6 CS / G7, L6 CS / G8, L6 CS / G9, L6 CS / G10, L6 SE / G9, L6 SE /
-          G10<br />Computer Science and Software Engineering Project (Aloka Fernando) LEC, [10.30am -12.30pm]<br />Aloka
-          Fernando<br />Auditorium<br /></td>
+          G10<br />Computer Science and Software Engineering Project LEC, [10.30am -12.30pm]<br />Aloka Fernando<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -1409,11 +1390,11 @@
       <tr>
         <th class="yAxis">11:30</th>
         <td>---</td>
-        <!-- span -->
+        <td>---</td>
         <!-- span -->
         <td>---</td>
         <td rowspan="2">L6 CS / G1, L6 CS / G7, L6 CS / G8, L6 CS / G9, L6 CS / G10, L6 SE / G9, L6 SE /
-          G10<br />Internet of Things (Sahan Priyanayana) LEC, [11.30am - 1.30pm]<br />Sahan Priyanayana<br /></td>
+          G10<br />Internet of Things LEC, [11.30am - 1.30pm]<br />Sahan Priyanayana<br /></td>
         <td>---</td>
         <td>---</td>
       </tr>
@@ -1432,9 +1413,9 @@
         <td>---</td>
         <td>---</td>
         <td>---</td>
-        <td rowspan="2">L6 CS / G8, L6 CS / G9, L6 CS / G7<br />Cyber Security LEC,
-          [1.30pm - 3.30pm]<br />Chamupathi Gigara Hettige<br />[3LA] -GP<br /></td>
         <td>---</td>
+        <td rowspan="2">L6 CS / G1, L6 CS / G7, L6 CS / G8, L6 CS / G9, L6 CS / G10<br />Internet of Things TUT, [1.30pm
+          -3.30pm]<br />Sahan Priyanayana<br />[5LB] -GP<br /></td>
         <td>---</td>
         <td>---</td>
       </tr>
@@ -1443,15 +1424,16 @@
         <td>---</td>
         <td>---</td>
         <td>---</td>
-        <!-- span -->
         <td>---</td>
+        <!-- span -->
         <td>---</td>
         <td>---</td>
       </tr>
       <tr>
         <th class="yAxis">15:30</th>
         <td>---</td>
-        <td>---</td>
+        <td rowspan="2">L6 CS / G5, L6 CS / G8, L6 CS / G10<br />Digital Marketing, Social Media and Web Analytics TUT, [3.30pm - 5.30pm]<br />PRAS,
+          MJAN<br />[3LA] -GP<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -1461,7 +1443,7 @@
       <tr>
         <th class="yAxis">16:30</th>
         <td>---</td>
-        <td>---</td>
+        <!-- span -->
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -1520,7 +1502,7 @@
       </tr>
       <tr class="foot">
         <td></td>
-        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 11:27 AM</td>
+        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 8:56 AM</td>
       </tr>
     </tbody>
   </table>
@@ -1551,7 +1533,8 @@
         <td>---</td>
         <td>---</td>
         <td>---</td>
-        <td>---</td>
+        <td rowspan="2">L6 CS / G8, L6 CS / G9, L6 CS / G7<br />Cyber Security LEC, [8.30am -
+          10.30am]<br />Chamupathi Gigara Hettige<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -1561,7 +1544,7 @@
         <td>---</td>
         <td>---</td>
         <td>---</td>
-        <td>---</td>
+        <!-- span -->
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -1569,10 +1552,10 @@
       <tr>
         <th class="yAxis">10:30</th>
         <td>---</td>
-        <td>---</td>
+        <td rowspan="2">L6 CS / G9, L6 CS / G10, L6 SE / G7, L6 SE / G8<br />Advanced Server Side Web Programming LEC, [10.30am
+          -12.30pm]<br />Indrajith Ekanayake<br />[4LA] -GP<br /></td>
         <td rowspan="2">L6 CS / G6, L6 CS / G7, L6 CS / G8, L6 CS / G9, L6 CS / G10, L6 SE / G9, L6 SE /
-          G10<br />Computer Science and Software Engineering Project (Aloka Fernando) LEC, [10.30am -12.30pm]<br />Aloka
-          Fernando<br />Auditorium<br /></td>
+          G10<br />Computer Science and Software Engineering Project LEC, [10.30am -12.30pm]<br />Aloka Fernando<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -1581,11 +1564,11 @@
       <tr>
         <th class="yAxis">11:30</th>
         <td>---</td>
-        <td>---</td>
+        <!-- span -->
         <!-- span -->
         <td>---</td>
         <td rowspan="2">L6 CS / G1, L6 CS / G7, L6 CS / G8, L6 CS / G9, L6 CS / G10, L6 SE / G9, L6 SE /
-          G10<br />Internet of Things (Sahan Priyanayana) LEC, [11.30am - 1.30pm]<br />Sahan Priyanayana<br /></td>
+          G10<br />Internet of Things LEC, [11.30am - 1.30pm]<br />Sahan Priyanayana<br /></td>
         <td>---</td>
         <td>---</td>
       </tr>
@@ -1603,13 +1586,11 @@
         <th class="yAxis">13:30</th>
         <td>---</td>
         <td>---</td>
-        <td rowspan="2">L6 CS / G9, L6 CS / G10<br />Advanced Interactive Media Development (Manul Singhe) LEC, [1.30pm
-          -
-          3.30pm]<br />Manul Singhe<br />[1LA]
-          -GP<br /></td>
-        <td rowspan="2">L6 CS / G8, L6 CS / G9, L6 CS / G7<br />Cyber Security LEC,
-          [1.30pm - 3.30pm]<br />Chamupathi Gigara Hettige<br />[3LA] -GP<br /></td>
+        <td rowspan="2">L6 CS / G9, L6 CS / G10<br />Advanced Interactive Media Development LEC, [1.30pm - 3.30pm]<br />Manul Singhe<br />[1LA] -GP<br />
+        </td>
         <td>---</td>
+        <td rowspan="2">L6 CS / G1, L6 CS / G7, L6 CS / G8, L6 CS / G9, L6 CS / G10<br />Internet of Things TUT, [1.30pm
+          -3.30pm]<br />Sahan Priyanayana<br />[5LB] -GP<br /></td>
         <td>---</td>
         <td>---</td>
       </tr>
@@ -1618,8 +1599,8 @@
         <td>---</td>
         <td>---</td>
         <!-- span -->
-        <!-- span -->
         <td>---</td>
+        <!-- span -->
         <td>---</td>
         <td>---</td>
       </tr>
@@ -1627,9 +1608,7 @@
         <th class="yAxis">15:30</th>
         <td>---</td>
         <td>---</td>
-        <td rowspan="2">L6 CS / G9, L6 CS / G10, L6 SE / G7, L6 SE / G8<br />Advanced Server Side Web Programming
-          (Indrajith Ekanayake)
-          LEC, [3.30pm - 5.30pm]<br />Indrajith Ekanayake<br />[4LA] -GP<br /></td>
+        <td>---</td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -1639,7 +1618,7 @@
         <th class="yAxis">16:30</th>
         <td>---</td>
         <td>---</td>
-        <!-- span -->
+        <td>---</td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -1697,7 +1676,7 @@
       </tr>
       <tr class="foot">
         <td></td>
-        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 11:27 AM</td>
+        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 8:56 AM</td>
       </tr>
     </tbody>
   </table>
@@ -1726,17 +1705,13 @@
       <tr>
         <th class="yAxis">08:30</th>
         <td>---</td>
-        <td rowspan="4">L6 CS / G5, L6 CS / G6, L6 CS / G7, L6 CS / G8, L6 CS / G10<br />Digital Marketing (Prof Prasad
-          Wimalaratne) LEC, [8.30am
-          -12.30pm]<br />Prof Prasad Wimalaratne<br />[3LA] -GP<br /></td>
+        <td rowspan="2">L6 CS / G5, L6 CS / G6, L6 CS / G7, L6 CS / G8, L6 CS / G10<br />Digital Marketing, Social Media and Web Analytics LEC, [8.30am -
+          10.30am]<br />Prof Prasad Wimalaratne<br />[3LA] -GP<br /></td>
         <td>---</td>
-        <td rowspan="2">L6 CS / G2, L6 CS / G10<br />Information Driven Entrepreneurship and Enterprise (Shonali Aponso)
-          LEC, [8.30am -
-          10.30am]<br />Shonali Aponso<br />DB - 3LA<br /></td>
-        <td rowspan="2">L6 CS / G2, L6 CS / G10<br />Information Driven Entrepreneurship and Enterprise (Shonali Aponso)
-          TUT, [8.30am
-          -
-          10.30am]<br />Shonali Aponso<br />DB - 3LA<br /></td>
+        <td rowspan="2">L6 CS / G2, L6 CS / G10<br />Information Driven Entrepreneurship and Enterprise LEC, [8.30am - 10.30am]<br />Shonali Aponso<br />DB - 3LA<br />
+        </td>
+        <td rowspan="2">L6 CS / G2, L6 CS / G10<br />Information Driven Entrepreneurship and Enterprise TUT, [8.30am - 10.30am]<br />Shonali Aponso<br />DB -
+          3LA<br /></td>
         <td>---</td>
         <td>---</td>
       </tr>
@@ -1753,10 +1728,10 @@
       <tr>
         <th class="yAxis">10:30</th>
         <td>---</td>
-        <!-- span -->
+        <td rowspan="2">L6 CS / G9, L6 CS / G10, L6 SE / G7, L6 SE / G8<br />Advanced Server Side Web Programming LEC, [10.30am
+          -12.30pm]<br />Indrajith Ekanayake<br />[4LA] -GP<br /></td>
         <td rowspan="2">L6 CS / G6, L6 CS / G7, L6 CS / G8, L6 CS / G9, L6 CS / G10, L6 SE / G9, L6 SE /
-          G10<br />Computer Science and Software Engineering Project (Aloka Fernando) LEC, [10.30am -12.30pm]<br />Aloka
-          Fernando<br />Auditorium<br /></td>
+          G10<br />Computer Science and Software Engineering Project LEC, [10.30am -12.30pm]<br />Aloka Fernando<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -1769,7 +1744,7 @@
         <!-- span -->
         <td>---</td>
         <td rowspan="2">L6 CS / G1, L6 CS / G7, L6 CS / G8, L6 CS / G9, L6 CS / G10, L6 SE / G9, L6 SE /
-          G10<br />Internet of Things (Sahan Priyanayana) LEC, [11.30am - 1.30pm]<br />Sahan Priyanayana<br /></td>
+          G10<br />Internet of Things LEC, [11.30am - 1.30pm]<br />Sahan Priyanayana<br /></td>
         <td>---</td>
         <td>---</td>
       </tr>
@@ -1786,16 +1761,14 @@
       <tr>
         <th class="yAxis">13:30</th>
         <td>---</td>
-        <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G10<br />Cyber Security
-          LEC, [1.30pm - 3.30pm]<br />Chamupathi Gigara Hettige<br />[5LA] -GP<br /></td>
-        <td rowspan="2">L6 CS / G9, L6 CS / G10<br />Advanced Interactive Media Development (Manul Singhe) LEC, [1.30pm
-          -
-          3.30pm]<br />Manul Singhe<br />[1LA]
-          -GP<br /></td>
+        <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G10<br />Cyber Security LEC, [1.30pm -
+          3.30pm]<br />Chamupathi Gigara Hettige<br />[5LA] -GP<br /></td>
+        <td rowspan="2">L6 CS / G9, L6 CS / G10<br />Advanced Interactive Media Development LEC, [1.30pm - 3.30pm]<br />Manul Singhe<br />[1LA] -GP<br />
+        </td>
         <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G4, L6 CS / G5, L6 CS / G6, L6 CS /
-          G10<br />Operational Research and Optimization (Sahdiya Hussain) LEC, [1.30pm - 3.30pm]<br />Sahdiya
-          Hussain<br />Auditorium<br /></td>
-        <td>---</td>
+          G10<br />Operational Research and Optimization LEC, [1.30pm - 3.30pm]<br />Sahdiya Hussain<br />Auditorium<br /></td>
+        <td rowspan="2">L6 CS / G1, L6 CS / G7, L6 CS / G8, L6 CS / G9, L6 CS / G10<br />Internet of Things TUT, [1.30pm
+          -3.30pm]<br />Sahan Priyanayana<br />[5LB] -GP<br /></td>
         <td>---</td>
         <td>---</td>
       </tr>
@@ -1805,17 +1778,16 @@
         <!-- span -->
         <!-- span -->
         <!-- span -->
-        <td>---</td>
+        <!-- span -->
         <td>---</td>
         <td>---</td>
       </tr>
       <tr>
         <th class="yAxis">15:30</th>
         <td>---</td>
+        <td rowspan="2">L6 CS / G5, L6 CS / G8, L6 CS / G10<br />Digital Marketing, Social Media and Web Analytics TUT, [3.30pm - 5.30pm]<br />PRAS,
+          MJAN<br />[3LA] -GP<br /></td>
         <td>---</td>
-        <td rowspan="2">L6 CS / G9, L6 CS / G10, L6 SE / G7, L6 SE / G8<br />Advanced Server Side Web Programming
-          (Indrajith Ekanayake)
-          LEC, [3.30pm - 5.30pm]<br />Indrajith Ekanayake<br />[4LA] -GP<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -1824,8 +1796,8 @@
       <tr>
         <th class="yAxis">16:30</th>
         <td>---</td>
-        <td>---</td>
         <!-- span -->
+        <td>---</td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -1883,7 +1855,7 @@
       </tr>
       <tr class="foot">
         <td></td>
-        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 11:27 AM</td>
+        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 8:56 AM</td>
       </tr>
     </tbody>
   </table>
@@ -1914,11 +1886,10 @@
         <td>---</td>
         <td>---</td>
         <td>---</td>
-        <td rowspan="2">L6 SE / G1, L6 SE / G2, L6 SE / G3, L6 SE / G4<br />Cyber Security
-          LEC, [8.30am - 10.30am]<br />Dhanushka Rathnayake<br />[5LA] -GP<br /></td>
+        <td rowspan="2">L6 SE / G1, L6 SE / G2, L6 SE / G3, L6 SE / G4<br />Cyber Security LEC, [8.30am -
+          10.30am]<br />Dhanushka Rathnayake<br />[5LA] -GP<br /></td>
         <td rowspan="2">L6 SE / G1, L6 SE / G2, L6 SE / G3, L6 SE / G4, L6 SE / G5, L6 SE / G6, L6 SE /
-          G11<br />Computer Science and Software Engineering Project (Aloka Fernando) LEC, [8.30am -
-          10.30am]<br />Guhanathan Poravi<br />Auditorium<br /></td>
+          G11<br />Computer Science and Software Engineering Project LEC, [8.30am - 10.30am]<br />Guhanathan Poravi<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
       </tr>
@@ -1968,9 +1939,8 @@
         <td>---</td>
         <td>---</td>
         <td>---</td>
-        <td rowspan="2">L6 SE / G1, L6 SE / G2, L6 SE / G3<br />Operational Research and Optimization (Sahdiya Hussain)
-          LEC, [1.30pm -
-          3.30pm]<br />Sahdiya Hussain<br />[5LA] -GP<br /></td>
+        <td rowspan="2">L6 SE / G1, L6 SE / G2, L6 SE / G3<br />Operational Research and Optimization LEC, [1.30pm - 3.30pm]<br />Sahdiya Hussain<br />[5LA]
+          -GP<br /></td>
         <td>---</td>
         <td>---</td>
       </tr>
@@ -2056,7 +2026,7 @@
       </tr>
       <tr class="foot">
         <td></td>
-        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 11:27 AM</td>
+        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 8:56 AM</td>
       </tr>
     </tbody>
   </table>
@@ -2087,11 +2057,10 @@
         <td>---</td>
         <td>---</td>
         <td>---</td>
-        <td rowspan="2">L6 SE / G1, L6 SE / G2, L6 SE / G3, L6 SE / G4<br />Cyber Security
-          LEC, [8.30am - 10.30am]<br />Dhanushka Rathnayake<br />[5LA] -GP<br /></td>
+        <td rowspan="2">L6 SE / G1, L6 SE / G2, L6 SE / G3, L6 SE / G4<br />Cyber Security LEC, [8.30am -
+          10.30am]<br />Dhanushka Rathnayake<br />[5LA] -GP<br /></td>
         <td rowspan="2">L6 SE / G1, L6 SE / G2, L6 SE / G3, L6 SE / G4, L6 SE / G5, L6 SE / G6, L6 SE /
-          G11<br />Computer Science and Software Engineering Project (Aloka Fernando) LEC, [8.30am -
-          10.30am]<br />Guhanathan Poravi<br />Auditorium<br /></td>
+          G11<br />Computer Science and Software Engineering Project LEC, [8.30am - 10.30am]<br />Guhanathan Poravi<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
       </tr>
@@ -2141,9 +2110,8 @@
         <td>---</td>
         <td>---</td>
         <td>---</td>
-        <td rowspan="2">L6 SE / G1, L6 SE / G2, L6 SE / G3<br />Operational Research and Optimization (Sahdiya Hussain)
-          LEC, [1.30pm -
-          3.30pm]<br />Sahdiya Hussain<br />[5LA] -GP<br /></td>
+        <td rowspan="2">L6 SE / G1, L6 SE / G2, L6 SE / G3<br />Operational Research and Optimization LEC, [1.30pm - 3.30pm]<br />Sahdiya Hussain<br />[5LA]
+          -GP<br /></td>
         <td>---</td>
         <td>---</td>
       </tr>
@@ -2229,7 +2197,7 @@
       </tr>
       <tr class="foot">
         <td></td>
-        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 11:27 AM</td>
+        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 8:56 AM</td>
       </tr>
     </tbody>
   </table>
@@ -2260,11 +2228,10 @@
         <td>---</td>
         <td>---</td>
         <td>---</td>
-        <td rowspan="2">L6 SE / G1, L6 SE / G2, L6 SE / G3, L6 SE / G4<br />Cyber Security
-          LEC, [8.30am - 10.30am]<br />Dhanushka Rathnayake<br />[5LA] -GP<br /></td>
+        <td rowspan="2">L6 SE / G1, L6 SE / G2, L6 SE / G3, L6 SE / G4<br />Cyber Security LEC, [8.30am -
+          10.30am]<br />Dhanushka Rathnayake<br />[5LA] -GP<br /></td>
         <td rowspan="2">L6 SE / G1, L6 SE / G2, L6 SE / G3, L6 SE / G4, L6 SE / G5, L6 SE / G6, L6 SE /
-          G11<br />Computer Science and Software Engineering Project (Aloka Fernando) LEC, [8.30am -
-          10.30am]<br />Guhanathan Poravi<br />Auditorium<br /></td>
+          G11<br />Computer Science and Software Engineering Project LEC, [8.30am - 10.30am]<br />Guhanathan Poravi<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
       </tr>
@@ -2314,9 +2281,8 @@
         <td>---</td>
         <td>---</td>
         <td>---</td>
-        <td rowspan="2">L6 SE / G1, L6 SE / G2, L6 SE / G3<br />Operational Research and Optimization (Sahdiya Hussain)
-          LEC, [1.30pm -
-          3.30pm]<br />Sahdiya Hussain<br />[5LA] -GP<br /></td>
+        <td rowspan="2">L6 SE / G1, L6 SE / G2, L6 SE / G3<br />Operational Research and Optimization LEC, [1.30pm - 3.30pm]<br />Sahdiya Hussain<br />[5LA]
+          -GP<br /></td>
         <td>---</td>
         <td>---</td>
       </tr>
@@ -2402,7 +2368,7 @@
       </tr>
       <tr class="foot">
         <td></td>
-        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 11:27 AM</td>
+        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 8:56 AM</td>
       </tr>
     </tbody>
   </table>
@@ -2433,11 +2399,10 @@
         <td>---</td>
         <td>---</td>
         <td>---</td>
-        <td rowspan="2">L6 SE / G1, L6 SE / G2, L6 SE / G3, L6 SE / G4<br />Cyber Security
-          LEC, [8.30am - 10.30am]<br />Dhanushka Rathnayake<br />[5LA] -GP<br /></td>
+        <td rowspan="2">L6 SE / G1, L6 SE / G2, L6 SE / G3, L6 SE / G4<br />Cyber Security LEC, [8.30am -
+          10.30am]<br />Dhanushka Rathnayake<br />[5LA] -GP<br /></td>
         <td rowspan="2">L6 SE / G1, L6 SE / G2, L6 SE / G3, L6 SE / G4, L6 SE / G5, L6 SE / G6, L6 SE /
-          G11<br />Computer Science and Software Engineering Project (Aloka Fernando) LEC, [8.30am -
-          10.30am]<br />Guhanathan Poravi<br />Auditorium<br /></td>
+          G11<br />Computer Science and Software Engineering Project LEC, [8.30am - 10.30am]<br />Guhanathan Poravi<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
       </tr>
@@ -2486,9 +2451,8 @@
         <td>---</td>
         <td>---</td>
         <td>---</td>
-        <td rowspan="2">L6 SE / G4, L6 SE / G5, L6 SE / G6<br />Operational Research and Optimization (Sahdiya Hussain)
-          LEC, [1.30pm -
-          3.30pm]<br />Pasindu Madhuranga<br />[5LB] -GP<br /></td>
+        <td rowspan="2">L6 SE / G4, L6 SE / G5, L6 SE / G6<br />Operational Research and Optimization LEC, [1.30pm - 3.30pm]<br />Pasindu Madhuranga<br />[5LB]
+          -GP<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -2575,7 +2539,7 @@
       </tr>
       <tr class="foot">
         <td></td>
-        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 11:27 AM</td>
+        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 8:56 AM</td>
       </tr>
     </tbody>
   </table>
@@ -2608,8 +2572,7 @@
         <td>---</td>
         <td>---</td>
         <td rowspan="2">L6 SE / G1, L6 SE / G2, L6 SE / G3, L6 SE / G4, L6 SE / G5, L6 SE / G6, L6 SE /
-          G11<br />Computer Science and Software Engineering Project (Aloka Fernando) LEC, [8.30am -
-          10.30am]<br />Guhanathan Poravi<br />Auditorium<br /></td>
+          G11<br />Computer Science and Software Engineering Project LEC, [8.30am - 10.30am]<br />Guhanathan Poravi<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
       </tr>
@@ -2628,8 +2591,8 @@
         <td>---</td>
         <td>---</td>
         <td>---</td>
-        <td rowspan="2">L6 SE / G5, L6 SE / G6, L6 SE / G7, L6 SE / G8<br />Cyber Security
-          LEC, [10.30am -12.30pm]<br />Dhanushka Rathnayake<br />[5LA] -GP<br /></td>
+        <td rowspan="2">L6 SE / G5, L6 SE / G6, L6 SE / G7, L6 SE / G8<br />Cyber Security LEC, [10.30am
+          -12.30pm]<br />Dhanushka Rathnayake<br />[5LA] -GP<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -2659,9 +2622,8 @@
         <td>---</td>
         <td>---</td>
         <td>---</td>
-        <td rowspan="2">L6 SE / G4, L6 SE / G5, L6 SE / G6<br />Operational Research and Optimization (Sahdiya Hussain)
-          LEC, [1.30pm -
-          3.30pm]<br />Pasindu Madhuranga<br />[5LB] -GP<br /></td>
+        <td rowspan="2">L6 SE / G4, L6 SE / G5, L6 SE / G6<br />Operational Research and Optimization LEC, [1.30pm - 3.30pm]<br />Pasindu Madhuranga<br />[5LB]
+          -GP<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -2748,7 +2710,7 @@
       </tr>
       <tr class="foot">
         <td></td>
-        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 11:27 AM</td>
+        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 8:56 AM</td>
       </tr>
     </tbody>
   </table>
@@ -2781,8 +2743,7 @@
         <td>---</td>
         <td>---</td>
         <td rowspan="2">L6 SE / G1, L6 SE / G2, L6 SE / G3, L6 SE / G4, L6 SE / G5, L6 SE / G6, L6 SE /
-          G11<br />Computer Science and Software Engineering Project (Aloka Fernando) LEC, [8.30am -
-          10.30am]<br />Guhanathan Poravi<br />Auditorium<br /></td>
+          G11<br />Computer Science and Software Engineering Project LEC, [8.30am - 10.30am]<br />Guhanathan Poravi<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
       </tr>
@@ -2801,8 +2762,8 @@
         <td>---</td>
         <td>---</td>
         <td>---</td>
-        <td rowspan="2">L6 SE / G5, L6 SE / G6, L6 SE / G7, L6 SE / G8<br />Cyber Security
-          LEC, [10.30am -12.30pm]<br />Dhanushka Rathnayake<br />[5LA] -GP<br /></td>
+        <td rowspan="2">L6 SE / G5, L6 SE / G6, L6 SE / G7, L6 SE / G8<br />Cyber Security LEC, [10.30am
+          -12.30pm]<br />Dhanushka Rathnayake<br />[5LA] -GP<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -2832,9 +2793,8 @@
         <td>---</td>
         <td>---</td>
         <td>---</td>
-        <td rowspan="2">L6 SE / G4, L6 SE / G5, L6 SE / G6<br />Operational Research and Optimization (Sahdiya Hussain)
-          LEC, [1.30pm -
-          3.30pm]<br />Pasindu Madhuranga<br />[5LB] -GP<br /></td>
+        <td rowspan="2">L6 SE / G4, L6 SE / G5, L6 SE / G6<br />Operational Research and Optimization LEC, [1.30pm - 3.30pm]<br />Pasindu Madhuranga<br />[5LB]
+          -GP<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -2921,7 +2881,7 @@
       </tr>
       <tr class="foot">
         <td></td>
-        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 11:27 AM</td>
+        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 8:56 AM</td>
       </tr>
     </tbody>
   </table>
@@ -2951,9 +2911,8 @@
         <th class="yAxis">08:30</th>
         <td>---</td>
         <td>---</td>
-        <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G4, L6 CS / G5, L6 SE / G7, L6 SE / G8<br />Computer
-          Science and Software Engineering Project (Aloka Fernando) LEC, [8.30am - 10.30am]<br />Aloka
-          Fernando<br />Auditorium<br /></td>
+        <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G4, L6 CS / G5, L6 SE / G7, L6 SE /
+          G8<br />Computer Science and Software Engineering Project LEC, [8.30am - 10.30am]<br />Aloka Fernando<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -2972,10 +2931,11 @@
       <tr>
         <th class="yAxis">10:30</th>
         <td>---</td>
+        <td rowspan="2">L6 CS / G9, L6 CS / G10, L6 SE / G7, L6 SE / G8<br />Advanced Server Side Web Programming LEC, [10.30am
+          -12.30pm]<br />Indrajith Ekanayake<br />[4LA] -GP<br /></td>
         <td>---</td>
-        <td>---</td>
-        <td rowspan="2">L6 SE / G5, L6 SE / G6, L6 SE / G7, L6 SE / G8<br />Cyber Security
-          LEC, [10.30am -12.30pm]<br />Dhanushka Rathnayake<br />[5LA] -GP<br /></td>
+        <td rowspan="2">L6 SE / G5, L6 SE / G6, L6 SE / G7, L6 SE / G8<br />Cyber Security LEC, [10.30am
+          -12.30pm]<br />Dhanushka Rathnayake<br />[5LA] -GP<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -2983,7 +2943,7 @@
       <tr>
         <th class="yAxis">11:30</th>
         <td>---</td>
-        <td>---</td>
+        <!-- span -->
         <td>---</td>
         <!-- span -->
         <td>---</td>
@@ -3024,9 +2984,7 @@
         <th class="yAxis">15:30</th>
         <td>---</td>
         <td>---</td>
-        <td rowspan="2">L6 CS / G9, L6 CS / G10, L6 SE / G7, L6 SE / G8<br />Advanced Server Side Web Programming
-          (Indrajith Ekanayake)
-          LEC, [3.30pm - 5.30pm]<br />Indrajith Ekanayake<br />[4LA] -GP<br /></td>
+        <td>---</td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -3036,7 +2994,7 @@
         <th class="yAxis">16:30</th>
         <td>---</td>
         <td>---</td>
-        <!-- span -->
+        <td>---</td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -3094,7 +3052,7 @@
       </tr>
       <tr class="foot">
         <td></td>
-        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 11:27 AM</td>
+        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 8:56 AM</td>
       </tr>
     </tbody>
   </table>
@@ -3124,9 +3082,8 @@
         <th class="yAxis">08:30</th>
         <td>---</td>
         <td>---</td>
-        <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G4, L6 CS / G5, L6 SE / G7, L6 SE / G8<br />Computer
-          Science and Software Engineering Project (Aloka Fernando) LEC, [8.30am - 10.30am]<br />Aloka
-          Fernando<br />Auditorium<br /></td>
+        <td rowspan="2">L6 CS / G1, L6 CS / G2, L6 CS / G3, L6 CS / G4, L6 CS / G5, L6 SE / G7, L6 SE /
+          G8<br />Computer Science and Software Engineering Project LEC, [8.30am - 10.30am]<br />Aloka Fernando<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -3145,10 +3102,11 @@
       <tr>
         <th class="yAxis">10:30</th>
         <td>---</td>
+        <td rowspan="2">L6 CS / G9, L6 CS / G10, L6 SE / G7, L6 SE / G8<br />Advanced Server Side Web Programming LEC, [10.30am
+          -12.30pm]<br />Indrajith Ekanayake<br />[4LA] -GP<br /></td>
         <td>---</td>
-        <td>---</td>
-        <td rowspan="2">L6 SE / G5, L6 SE / G6, L6 SE / G7, L6 SE / G8<br />Cyber Security
-          LEC, [10.30am -12.30pm]<br />Dhanushka Rathnayake<br />[5LA] -GP<br /></td>
+        <td rowspan="2">L6 SE / G5, L6 SE / G6, L6 SE / G7, L6 SE / G8<br />Cyber Security LEC, [10.30am
+          -12.30pm]<br />Dhanushka Rathnayake<br />[5LA] -GP<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -3156,7 +3114,7 @@
       <tr>
         <th class="yAxis">11:30</th>
         <td>---</td>
-        <td>---</td>
+        <!-- span -->
         <td>---</td>
         <!-- span -->
         <td>---</td>
@@ -3197,9 +3155,7 @@
         <th class="yAxis">15:30</th>
         <td>---</td>
         <td>---</td>
-        <td rowspan="2">L6 CS / G9, L6 CS / G10, L6 SE / G7, L6 SE / G8<br />Advanced Server Side Web Programming
-          (Indrajith Ekanayake)
-          LEC, [3.30pm - 5.30pm]<br />Indrajith Ekanayake<br />[4LA] -GP<br /></td>
+        <td>---</td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -3209,7 +3165,7 @@
         <th class="yAxis">16:30</th>
         <td>---</td>
         <td>---</td>
-        <!-- span -->
+        <td>---</td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -3267,7 +3223,7 @@
       </tr>
       <tr class="foot">
         <td></td>
-        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 11:27 AM</td>
+        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 8:56 AM</td>
       </tr>
     </tbody>
   </table>
@@ -3316,11 +3272,10 @@
       <tr>
         <th class="yAxis">10:30</th>
         <td>---</td>
-        <td rowspan="2">L6 SE / G9, L6 SE / G10, L6 SE / G11<br />Cyber Security LEC,
-          [10.30am -12.30pm]<br />Yaalini Balathasan<br />[5LA] -GP<br /></td>
+        <td rowspan="2">L6 SE / G9, L6 SE / G10, L6 SE / G11<br />Cyber Security LEC, [10.30am -12.30pm]<br />Yaalini Balathasan<br />[5LA]
+          -GP<br /></td>
         <td rowspan="2">L6 CS / G6, L6 CS / G7, L6 CS / G8, L6 CS / G9, L6 CS / G10, L6 SE / G9, L6 SE /
-          G10<br />Computer Science and Software Engineering Project (Aloka Fernando) LEC, [10.30am -12.30pm]<br />Aloka
-          Fernando<br />Auditorium<br /></td>
+          G10<br />Computer Science and Software Engineering Project LEC, [10.30am -12.30pm]<br />Aloka Fernando<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -3333,7 +3288,7 @@
         <!-- span -->
         <td>---</td>
         <td rowspan="2">L6 CS / G1, L6 CS / G7, L6 CS / G8, L6 CS / G9, L6 CS / G10, L6 SE / G9, L6 SE /
-          G10<br />Internet of Things (Sahan Priyanayana) LEC, [11.30am - 1.30pm]<br />Sahan Priyanayana<br /></td>
+          G10<br />Internet of Things LEC, [11.30am - 1.30pm]<br />Sahan Priyanayana<br /></td>
         <td>---</td>
         <td>---</td>
       </tr>
@@ -3439,7 +3394,7 @@
       </tr>
       <tr class="foot">
         <td></td>
-        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 11:27 AM</td>
+        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 8:56 AM</td>
       </tr>
     </tbody>
   </table>
@@ -3488,11 +3443,10 @@
       <tr>
         <th class="yAxis">10:30</th>
         <td>---</td>
-        <td rowspan="2">L6 SE / G9, L6 SE / G10, L6 SE / G11<br />Cyber Security LEC,
-          [10.30am -12.30pm]<br />Yaalini Balathasan<br />[5LA] -GP<br /></td>
+        <td rowspan="2">L6 SE / G9, L6 SE / G10, L6 SE / G11<br />Cyber Security LEC, [10.30am -12.30pm]<br />Yaalini Balathasan<br />[5LA]
+          -GP<br /></td>
         <td rowspan="2">L6 CS / G6, L6 CS / G7, L6 CS / G8, L6 CS / G9, L6 CS / G10, L6 SE / G9, L6 SE /
-          G10<br />Computer Science and Software Engineering Project (Aloka Fernando) LEC, [10.30am -12.30pm]<br />Aloka
-          Fernando<br />Auditorium<br /></td>
+          G10<br />Computer Science and Software Engineering Project LEC, [10.30am -12.30pm]<br />Aloka Fernando<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -3505,7 +3459,7 @@
         <!-- span -->
         <td>---</td>
         <td rowspan="2">L6 CS / G1, L6 CS / G7, L6 CS / G8, L6 CS / G9, L6 CS / G10, L6 SE / G9, L6 SE /
-          G10<br />Internet of Things (Sahan Priyanayana) LEC, [11.30am - 1.30pm]<br />Sahan Priyanayana<br /></td>
+          G10<br />Internet of Things LEC, [11.30am - 1.30pm]<br />Sahan Priyanayana<br /></td>
         <td>---</td>
         <td>---</td>
       </tr>
@@ -3611,7 +3565,7 @@
       </tr>
       <tr class="foot">
         <td></td>
-        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 11:27 AM</td>
+        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 8:56 AM</td>
       </tr>
     </tbody>
   </table>
@@ -3644,8 +3598,7 @@
         <td>---</td>
         <td>---</td>
         <td rowspan="2">L6 SE / G1, L6 SE / G2, L6 SE / G3, L6 SE / G4, L6 SE / G5, L6 SE / G6, L6 SE /
-          G11<br />Computer Science and Software Engineering Project (Aloka Fernando) LEC, [8.30am -
-          10.30am]<br />Guhanathan Poravi<br />Auditorium<br /></td>
+          G11<br />Computer Science and Software Engineering Project LEC, [8.30am - 10.30am]<br />Guhanathan Poravi<br />Auditorium<br /></td>
         <td>---</td>
         <td>---</td>
       </tr>
@@ -3662,8 +3615,8 @@
       <tr>
         <th class="yAxis">10:30</th>
         <td>---</td>
-        <td rowspan="2">L6 SE / G9, L6 SE / G10, L6 SE / G11<br />Cyber Security LEC,
-          [10.30am -12.30pm]<br />Yaalini Balathasan<br />[5LA] -GP<br /></td>
+        <td rowspan="2">L6 SE / G9, L6 SE / G10, L6 SE / G11<br />Cyber Security LEC, [10.30am -12.30pm]<br />Yaalini Balathasan<br />[5LA]
+          -GP<br /></td>
         <td>---</td>
         <td>---</td>
         <td>---</td>
@@ -3782,7 +3735,7 @@
       </tr>
       <tr class="foot">
         <td></td>
-        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 11:27 AM</td>
+        <td colspan="7">Timetable generated with FET 5.33.1 on 1/16/26 8:56 AM</td>
       </tr>
     </tbody>
   </table>
